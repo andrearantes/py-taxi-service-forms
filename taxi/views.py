@@ -25,7 +25,7 @@ class CarUpdateView(UpdateView):
 
 class CarDeleteView(DeleteView):
     model = Car
-    template_name = "taxi/car_form.html"
+    template_name = "taxi/car_delete.html"
     success_url = reverse_lazy("taxi:car-list")
 
 
@@ -45,7 +45,7 @@ class ManufacturerUpdateView(UpdateView):
 
 class ManufacturerDeleteView(DeleteView):
     model = Manufacturer
-    template_name = "taxi/manufacturer_form.html"  # diferente!
+    template_name = "taxi/manufacturer_delete.html"  # diferente!
     success_url = reverse_lazy("taxi:manufacturer-list")
 
 
